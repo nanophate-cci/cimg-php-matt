@@ -8,5 +8,5 @@ jobs:
     steps:
       - checkout
       - run: php -m
-      - run: nginx -v
+      - run: curl -i http://127.0.0.1/nginx_status
       - run: mariadb --version
